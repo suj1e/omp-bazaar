@@ -73,6 +73,11 @@ The site reads the catalog and each plugin's real README. It never installs or e
 
 Before release, manually inspect desktop and mobile layouts, keyboard navigation, search/category/no-results/reset, clipboard success/failure, direct detail routes, 404, reduced motion, and background-tab particle suspension. The tiny canvas caps particles and device pixel ratio and suspends on `document.hidden`; system reduced-motion disables it. Browser interaction checks require a browser and are separate from the Node checks.
 
+### Release verification
+
+Both published plugins were installed from `suj1e/omp-bazaar` in an isolated omp 18.14.2 profile. Chromium checks exercised search, category filtering, empty states, direct plugin pages, clipboard success and failure, mobile navigation, and reduced-motion mode. Canvas frames changed while motion was enabled, and animations were disabled when reduced motion was requested.
+
+
 ## Contribute a plugin
 
 1. Create a directory under `plugins/` containing a substantive README and at least one `skills/<name>/SKILL.md`. Use a lowercase hyphenated skill name and matching `name` frontmatter with a meaningful `description`.
