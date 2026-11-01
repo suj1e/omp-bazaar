@@ -1,0 +1,34 @@
+{
+  "name": "omp-bazaar",
+  "owner": { "name": "suj1e" },
+  "metadata": {
+    "description": "Small, deliberate skills for evidence-led work in omp.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "review-evidence",
+      "description": "Review a change against its requirements, trace findings to evidence, and distinguish observed failures from open questions.",
+      "source": "./plugins/review-evidence",
+      "version": "1.0.0",
+      "author": { "name": "suj1e" },
+      "category": "Code review",
+      "tags": ["review", "evidence", "correctness"],
+      "homepage": "https://ompbazaar.beer/plugins/review-evidence/",
+      "repository": "https://github.com/suj1e/omp-bazaar/tree/main/plugins/review-evidence",
+      "license": "MIT"
+    },
+    {
+      "name": "release-readiness",
+      "description": "Turn a proposed release into a scoped readiness decision with a verification ledger, rollout plan, and explicit blockers.",
+      "source": "./plugins/release-readiness",
+      "version": "1.0.0",
+      "author": { "name": "suj1e" },
+      "category": "Release planning",
+      "tags": ["release", "verification", "handoff"],
+      "homepage": "https://ompbazaar.beer/plugins/release-readiness/",
+      "repository": "https://github.com/suj1e/omp-bazaar/tree/main/plugins/release-readiness",
+      "license": "MIT"
+    }
+  ]
+}

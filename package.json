@@ -1,0 +1,12 @@
+{
+  "name": "omp-bazaar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node --test tests/*.test.mjs && node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": { "marked": "15.0.12" }
+}
